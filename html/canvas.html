@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-   <h1>HTML Canvas - Draw rectangle</h1>
+<body style="text-align: center;">
+    <h2>First svg</h2>
+    <svg width = "200" height = "200">   
+        <circle cx = "100" cy = "100" r = "100" stroke = "red" stroke-width="0" fill = "lightblue">   </circle>
+    </svg>
+
+     <h1>HTML Canvas - Draw rectangle</h1>
    <canvas id="myCanvas" width = "200" height = "100" style="border: 1px solid black;"></canvas> 
-   
+    <h3>Article Tag</h3>
+    <article>   
+        <h3>Here are several healthy tip article headings, categorized by theme, based on current health guidelines: </h3>
+        <p>Healthy eating helps improve energy levels,</p>
+    </article>
+    <aside>
+        <h3>Quick Health tips</h3>
+        <ul>
+            <li>Drink a glass of water</li>
+            <br>
+            <li>include more fruits and vegetables</li>
+            <br>
+            <li>walk for atleast 30 minutes </li>
+        </ul>
+    </aside>
    <script> 
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");

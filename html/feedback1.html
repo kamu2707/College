@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Silver oak university</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #74ebd5, #9face6);
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #74ebd5;
+        }
+
+        /* Form Container */
+        .container {
+            max-width: 500px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input Fields */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #74ebd5;
+            box-shadow: 0 0 8px rgba(116, 235, 213, 0.6);
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #74ebd5;
+            border: none;
+            border-radius: 6px;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        button:hover {
+            background: #9face6;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .website-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .website-link p {
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        .website-link a {
+            color: #74ebd5;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .website-link a:hover {
+            color: #9face6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>My Website</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Form -->
+    <div class="container">
+        <h2>Silver oak university</h2>
+        <form>
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Rating</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Your Feedback</label>
+                <textarea placeholder="Write your feedback here..." required></textarea>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- University Website Link -->
+        <div class="website-link">
+            <p>Visit Official Website:</p>
+            <a href="https://silveroakuni.ac.in/" target="_blank">
+                www.silveroakuni.ac.in
+            </a>
+        </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+
+</html>
