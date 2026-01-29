@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="text-align: center; background-color: brown;">
+    <form name="form1" action="" method="POST">
+        <label>name:</label>
+        <input type="text" name="n1" id="n1" placeholder="Enter first name" > <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" > <br><br>
+        
+        <label>Age:</label>
+        <input type="number" name="age" id="age" min="1" max="100" > <br><br>
+
+        <label>password:</label>
+        <input type="password" name="password" id="password" minlength="2" placeholder="Enter password"  > <br><br>
+
+        <label>Website:</label>
+        <input type="text" name="Website" id="website" placeholder="https://example.com" > <br><br>
+
+        <label>Phone:</label>
+        <input type="text" name="num" id="num" placeholder="120-456-7890" pattern="[0-9]" maxlength="10"  required> <br><br>
+
+        <input type="submit" name="btn" id="btn" value="submit">
+    </form>
+    </table>
+</body>
+</html>
